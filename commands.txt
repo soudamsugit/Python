@@ -1,0 +1,203 @@
+    1  yum install python
+    2  systemctl status packagekit
+    3  systemctl stop packagekit
+    4  cat /etc/yum.repos.d/
+    5  cd /etc/yum.repos.d/
+    6  ls -l
+    7  cat CentOS-Base.repo 
+    8  yum update -y python
+    9  yum info python
+   10  yum list installed | grep python
+   11  yum list installed | grep python | less
+   12  rpm -ql python
+   13  rpm -qi python
+   14  cd
+   15  pwd
+   16  cd /Python
+   17  mkdir /python
+   18  cd /python/
+   19  df -h
+   20  cd /python/
+   21  ls -
+   22  ls -lart
+   23  ls -l
+   24  vi mypython.py
+   25  sh mypython.py 
+   26  bash mypython.py 
+   27  vi mypython.py 
+   28  chmod +x mypython.py 
+   29  ls -l
+   30  ./mypython.py 
+   31  vi mypython.py 
+   32  ./mypython.py 
+   33  vi mypython.py 
+   34  ./mypython.py 
+   35  systemctl get-default 
+   36  systemctl set-default multi-user.target 
+   37  systemctl set-default graphical.target 
+   38  systemctl isolate multi-user.target
+   39  journalctl 
+   40  journalctl -p er
+   41  journalctl -p err
+   42  journalctl -p priv
+   43  cat /etc/systemd/journald.conf 
+   44  cat /etc/systemd/journald.conf | less
+   45  logger "hello suresh"
+   46  journalctl 
+   47  journalctl -f tail
+   48  tail -f journalctl
+   49  journalctl tail
+   50  journalctl -f
+   51  id student
+   52  cat /etc/sudoers
+   53  cat /etc/sudoers |less
+   54  usermod -aG wheel
+   55  usermod -aG wheel student
+   56  id student
+   57  cat /etc/sudoers
+   58  id student
+   59  newgrp student
+   60  yum history
+   61  kill -SIGTERM packagekit
+   62  kill -SIGTERM 13249
+   63  systemctl stop packagekit
+   64  systemctl isolate multi-user.target 
+   65  mkdir /mygit/workspace
+   66  pwd
+   67  ls -l
+   68  mkdir -pv /mygit/workspace
+   69  cd /mygit/workspace/
+   70  git init
+   71  ls -l
+   72  cd .git
+   73  cd ..
+   74  yum install tree
+   75  git status
+   76  echo "this is a test file" >> suresh.txt
+   77  git status
+   78  git add suresh.txt
+   79  git status
+   80  git commit -m "this is a test upload"
+   81  git status
+   82  git tree
+   83  tree
+   84  git log
+   85  git branch -l
+   86  git branch develop
+   87  git branch
+   88  git checkout develop
+   89  git branch
+   90  git checkout master
+   91  git branch
+   92  git diff develop
+   93  git checkout develop
+   94  echo "this is a developer branch" > suresh1.txt
+   95  git status
+   96  git add suresh1.txt
+   97  git commit -m "this is next upload"
+   98  git diff master
+   99  echo "this is next line" >> suresh.txt
+  100  git add suresh.txt
+  101  git commit -m " this upload"
+  102  git diff master
+  103  history
+  104  git branch
+  105  git checkout master
+  106  git branch 
+  107  git merger develop
+  108  git merge develop
+  109  git status
+  110  git log
+  111  git status
+  112  git branch -l
+  113  git branch 
+  114  git list
+  115  git status
+  116  git log
+  117  git diff develop
+  118  git branch 
+  119  git log
+  120  git log | head -n 1
+  121* git show `git log | head -n 1| awk`
+  122  git log | head -n 1 | awk `{print $1}`
+  123  git log | head -n 1 | awk {print $1}
+  124  git log | head -n 1 | awk '{print $1}
+'
+  125  git log | head -n 1 | awk '{print $1}'
+  126  git log | head -n 1 | awk '{print $2}'
+  127  git show `git log | head -n 1 | awk '{print $2}'`
+  128  git log --graph --decorate --abbrev-commit --all --pretty
+  129* 
+  130  git log --graph --decorate --abbrev-commit --all --pretty
+  131  vi .git/config 
+  132  git l
+  133  git log
+  134  git l
+  135  vi .git/config 
+  136  git logdt
+  137  logdt
+  138  vi .git/config 
+  139  git logdt
+  140  vi .git/config 
+  141  git logdt
+  142  git remote -v
+  143  git clone https://github.com/soudamsugit/Python
+  144  ls -l
+  145  cd Python/
+  146  ls -l
+  147  git show
+  148  git log
+  149  git branch
+  150  git branch -l
+  151  cd ..
+  152  git 
+  153  git branch -l
+  154  ls -l
+  155  rm -rf Python/
+  156  history
+  157  git add origin https://github.com/soudamsugit
+  158  git  origin add  https://github.com/soudamsugit
+  159  git remote -v
+  160  git add origin https://github.com/soudamsugit
+  161  git remote add origin https://github.com/soudamsugit
+  162  git remote -v
+  163  git remote add origin https://github.com/soudamsugit/Python
+  164  git remote add origin https://github.com/soudamsugit/NodeJS
+  165  git remote -v
+  166  git branch -l
+  167  git branch develop
+  168  git checkout develop
+  169  git branch -
+  170  git branch -l
+  171  git push origin develop
+  172  git push origin/Python develop
+  173  git remote remove origin https://github.com/soudamsugit
+  174  git remote -v
+  175  git remote remove origin https://github.com/soudamsugit
+  176  git remote remove origin https://github.com/soudamsugit/
+  177  git remote -v
+  178  git push origin develop
+  179  git remote rm origin
+  180  git remove -v
+  181  git remote -v
+  182  git remote add origin https://github.com/soudamsugit/Python
+  183  git remote -v
+  184  git push origin develop
+  185  git push --ll
+  186  git push --all
+  187  git pull origing
+  188  git pull origin
+  189  git branch -l
+  190  git checout master
+  191  git checkout master
+  192  git merge develop
+  193  git push --all
+  194  git branch
+  195  git pull origin 
+  196  git pull origin master
+  197  git push --all
+  198  git show
+  199  ls -l
+  200  git list
+  201  history
+  202  history | tee commands.txt
